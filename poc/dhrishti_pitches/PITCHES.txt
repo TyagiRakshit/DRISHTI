@@ -1,0 +1,23 @@
+	PITCHES
+
+Good evening Sir,
+I hope you’re doing well. I’m currently working on an early-stage research prototype that looks at how public narratives form and shift during fast-moving events. Since the prototype is mainly meant for journalists, media agencies, and law enforcement, I’m looking for honest, critical feedback from professionals in these fields rather than pitching anything. I wanted to ask if you might be willing to help me connect with a few members from the UWS tribe in these areas who would be open to sharing their perspective. Even brief conversations would really help me understand whether I’m building something meaningful or if my assumptions are off.
+Thank you for your guidance.
+-------------------------------------------------------------
+
+Subject: Seeking feedback on a narrative analysis prototype
+
+Hello {{Name}},
+
+I’m working on an early-stage prototype that analyzes how public narratives form and shift during fast-moving events — beyond keywords or sentiment.
+
+The system groups public posts by meaning to surface dominant and emerging narratives, track how they grow or fade over time, and show framing changes across the discourse. It’s designed for sense-making and early context, not individual tracking or truth claims.
+
+We’re seeking honest feedback from professionals who work with public discourse to understand whether this approach is useful, misleading, or incomplete.
+
+If you’re open to a short conversation, we’d really value your perspective.
+
+Best regards,
+{{Your Name}}
+
+-------------------------------------------------------------------
