@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Rajdhani:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-accent-primary: #f97316;
+  --color-accent-secondary: #ea580c;
+  --font-display: 'Rajdhani', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+:root {
+  --bg-color: #050302;
+  /* Warm black */
+
+  /* Orange Palette for "Critical/Urgent" feel */
+  --accent-primary: #f97316;
+  /* Orange 500 */
+  --accent-secondary: #ea580c;
+  /* Orange 600 */
+  --accent-dim: rgba(249, 115, 22, 0.1);
+  --accent-glow: 0 0 10px rgba(234, 88, 12, 0.4);
+
+  --panel-bg: rgba(20, 10, 5, 0.85);
+  --panel-border: rgba(249, 115, 22, 0.2);
+
+  --font-display: 'Rajdhani', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* @layer base { */
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: #e2e8f0;
+  overflow: hidden;
+}
+
+/* } */
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Tech Panel Styles */
+.tech-panel {
+  background: var(--panel-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.tech-panel::before {
+  /* Corner marker top-left */
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid var(--accent-primary);
+  border-left: 2px solid var(--accent-primary);
+}
+
+.tech-panel::after {
+  /* Corner marker bottom-right */
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid var(--accent-primary);
+  border-right: 2px solid var(--accent-primary);
+}
+
+.tech-header {
+  background: linear-gradient(90deg, rgba(249, 115, 22, 0.15) 0%, transparent 100%);
+  border-bottom: 1px solid var(--panel-border);
+}
+
+/* Grid overlay for map */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(249, 115, 22, 0.3);
+  border-radius: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(249, 115, 22, 0.5);
+}
