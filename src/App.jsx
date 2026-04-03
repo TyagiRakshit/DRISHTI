@@ -12,7 +12,9 @@ import FramesListPage from './components/FramesListPage';
 import narrativeData from './data/narrative_data.json';
 
 function App() {
-  const [selectedLeadId, setSelectedLeadId] = React.useState(narrativeData.length > 0 ? narrativeData[0].narrative_id.toString() : null);
+  const [selectedLeadId, setSelectedLeadId] = React.useState(
+    narrativeData.length > 0 ? narrativeData[0].narrative_id.toString() : null
+  );
   const [selectedTheme, setSelectedTheme] = React.useState(null);
   const [viewMode, setViewMode] = React.useState('dashboard'); // 'dashboard', 'themes', 'frames', 'detail'
 
@@ -27,16 +29,18 @@ function App() {
         {/* Top Bar / Status - Strategic & Chic Design */}
         <div className="absolute top-0 left-0 right-0 p-8 flex items-start justify-between pointer-events-auto z-20">
           <div>
-            <h1 className="font-display font-bold text-6xl tracking-[0.2em] text-white drop-shadow-2xl select-none leading-none">
-              DHR<span className="text-orange-500">ISTI</span>
+            {/* 🔴 FIXED LOGO — FULLY ORANGE DRISHTI */}
+            <h1 className="font-display font-bold text-6xl tracking-[0.2em] text-orange-500 drop-shadow-2xl select-none leading-none">
+              DRISHTI
             </h1>
+
             <div className="flex items-center gap-2 mt-1 opacity-70">
               <div className="h-0.5 w-12 bg-orange-500"></div>
-              <span className="text-[10px] font-mono tracking-widest text-orange-400 uppercase">Intelligence System</span>
+              <span className="text-[10px] font-mono tracking-widest text-orange-400 uppercase">
+                Intelligence System
+              </span>
             </div>
           </div>
-
-
         </div>
 
         {/* Level 1: Themes Selection */}
